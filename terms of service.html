@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b46">
+  <meta name="description" content="Xinto Terms of Service — terms and conditions for using Xinto business tools.">
+  <title>Terms of Service | Xinto</title>
+
+  <style>
+    :root {
+      --navy: #101b46;
+      --blue: #3658d4;
+      --light-blue: #eaf0ff;
+      --text: #202947;
+      --muted: #66718c;
+      --border: #e0e7f5;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--text);
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at top left, #e7edff, transparent 35%),
+        #f7f9ff;
+    }
+
+    a {
+      color: var(--blue);
+      text-underline-offset: 4px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-size: 1.35rem;
+      font-weight: 850;
+      letter-spacing: -1px;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      margin-right: 7px;
+      border-radius: 12px;
+      color: white;
+      background: linear-gradient(140deg, #718fff, #2945bb);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 17px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 650;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 38px auto 70px;
+      padding: 0 22px;
+    }
+
+    .hero {
+      padding: clamp(30px, 6vw, 65px);
+      border-radius: 28px;
+      color: white;
+      background: linear-gradient(125deg, #101b46, #263f9d 65%, #5679ef);
+      box-shadow: 0 22px 55px #172c7626;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid #ffffff45;
+      border-radius: 30px;
+      color: #e1e8ff;
+      font-size: .76rem;
+      font-weight: 750;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 20px 0 12px;
+      font-size: clamp(2.3rem, 6vw, 4rem);
+      line-height: 1.1;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #e0e7ff;
+      font-size: 1.08rem;
+    }
+
+    .updated {
+      margin-top: 25px;
+      color: #cbd7ff;
+      font-size: .9rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 235px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      margin-top: 25px;
+    }
+
+    .toc, .content {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: 0 12px 38px #172c760d;
+    }
+
+    .toc {
+      position: sticky;
+      top: 85px;
+      padding: 20px;
+    }
+
+    .toc h2 {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: .76rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 9px;
+      border-radius: 8px;
+      color: #4a5575;
+      font-size: .88rem;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: var(--blue);
+      background: var(--light-blue);
+    }
+
+    .content { padding: clamp(22px, 4vw, 42px); }
+
+    .notice {
+      padding: 15px 17px;
+      border: 1px solid #d6e2ff;
+      border-radius: 13px;
+      background: #f0f4ff;
+      color: #35436b;
+      font-size: .92rem;
+    }
+
+    section {
+      padding: 24px 0;
+      scroll-margin-top: 90px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 1.4rem;
+      letter-spacing: -.5px;
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      color: var(--navy);
+      font-size: 1rem;
+    }
+
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+
+    .contact {
+      padding: 22px;
+      border: 1px solid #dce5ff;
+      border-radius: 17px;
+      background: linear-gradient(135deg, #eff3ff, white);
+    }
+
+    footer {
+      max-width: 1050px;
+      margin: auto;
+      padding: 0 22px 30px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 760px) {
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 13px 17px;
+      }
+
+      .nav-links { gap: 14px; }
+
+      .container {
+        margin-top: 22px;
+        padding: 0 14px;
+      }
+
+      .hero { border-radius: 22px; }
+
+      .layout { grid-template-columns: 1fr; }
+
+      .toc { position: static; }
+
+      .toc-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2px;
+      }
+
+      .content { padding: 22px 19px; }
+
+      footer { padding: 0 14px 25px; }
+    }
+
+    @media print {
+      .navbar, .toc, footer { display: none; }
+      body { background: white; }
+      .container { margin: 0; max-width: none; }
+      .layout { display: block; }
+      .hero { color: black; background: white; box-shadow: none; }
+      .hero p, .updated, .eyebrow { color: #333; }
+      .content { box-shadow: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">X</span>Xinto
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Privacy Policy</a>
+        <a href="terms.html" aria-current="page">Terms of Service</a>
+        <a href="https://bizcentral-7ef79.web.app/"
+           target="_blank" rel="noopener noreferrer">Xinto Website ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <span class="eyebrow">Clear rules · Responsible use</span>
+      <h1>Terms of Service</h1>
+      <p>
+        The terms that guide your use of Xinto's business tools,
+        account features, and AI-assisted functionality.
+      </p>
+      <div class="updated">Last updated: October 21, 2026</div>
+    </div>
+
+    <div class="layout">
+      <aside class="toc">
+        <h2>On this page</h2>
+        <div class="toc-list">
+          <a href="#agreement">Agreement</a>
+          <a href="#accounts">Accounts</a>
+          <a href="#service">Our service</a>
+          <a href="#content">Your information</a>
+          <a href="#ai">AI features</a>
+          <a href="#acceptable-use">Acceptable use</a>
+          <a href="#payments">Fees and payments</a>
+          <a href="#availability">Availability</a>
+          <a href="#termination">Termination</a>
+          <a href="#disclaimers">Disclaimers</a>
+          <a href="#liability">Liability</a>
+          <a href="#law">Applicable law</a>
+          <a href="#changes">Changes</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </aside>
+
+      <article class="content">
+        <div class="notice">
+          <strong>Please read these Terms carefully.</strong>
+          This template must be checked against Xinto's actual features,
+          business details, and applicable law before it is published as
+          the official agreement.
+        </div>
+
+        <section id="agreement">
+          <h2>1. Agreement to these Terms</h2>
+          <p>
+            These Terms of Service (“Terms”) apply to your access to and use
+            of Xinto, including its application, website, and features made
+            available to you.
+          </p>
+          <p>
+            By creating an account or using Xinto, you agree to these Terms.
+            If you do not agree, do not use the service.
+          </p>
+          <p>
+            “Xinto,” “we,” “us,” and “our” refer to the person or legal entity
+            operating Xinto. The operator's legal name and address should be
+            added before publication where required.
+          </p>
+        </section>
+
+        <section id="accounts">
+          <h2>2. Accounts and eligibility</h2>
+          <p>
+            You must be legally capable of entering into a binding agreement
+            to use Xinto. If you use Xinto for a business, you confirm that
+            you are authorised to act for that business.
+          </p>
+          <ul>
+            <li>Provide accurate information when creating your account.</li>
+            <li>Keep your login credentials secure.</li>
+            <li>Do not share access in a way that compromises account security.</li>
+            <li>Contact us if you suspect unauthorised access to your account.</li>
+          </ul>
+          <p>
+            You are responsible for activity through your account, subject to
+            any protections required by applicable law.
+          </p>
+        </section>
+
+        <section id="service">
+          <h2>3. What Xinto provides</h2>
+          <p>
+            Xinto is intended to help users organise business information and
+            workflows. Depending on the version and features available, this
+            may include business records, accounting-related information,
+            planning, tasks, summaries, analytics, and AI-assisted tools.
+          </p>
+          <p>
+            Features may change, be improved, or become temporarily unavailable.
+            We do not promise that every feature will always be available to
+            every user.
+          </p>
+          <p>
+            Unless expressly agreed in writing, Xinto is not a bank, accounting
+            firm, law firm, tax adviser, investment adviser, or fiduciary.
+          </p>
+        </section>
+
+        <section id="content">
+          <h2>4. Your information and business records</h2>
+          <p>
+            You retain your rights to the information and content you submit
+            to Xinto (“Your Content”). You give Xinto permission to host,
+            process, transmit, and display Your Content as reasonably necessary
+            to operate the service and provide the features you request,
+            subject to the Privacy Policy.
+          </p>
+          <p>You are responsible for:</p>
+          <ul>
+            <li>The accuracy and legality of the information you enter.</li>
+            <li>Having permission to upload information belonging to others.</li>
+            <li>Following applicable privacy, confidentiality, and recordkeeping laws.</li>
+            <li>Maintaining independent copies of important business records.</li>
+          </ul>
+          <p>
+            Unless a feature explicitly guarantees backup or archival services,
+            do not rely on Xinto as your only copy of important records.
+          </p>
+        </section>
+
+        <section id="ai">
+          <h2>5. AI-assisted features</h2>
+          <p>
+            Where enabled, Xinto may use artificial intelligence to generate
+            summaries, suggestions, classifications, calculations, or other
+            responses. AI-generated content can be inaccurate, incomplete,
+            or unsuitable for your circumstances.
+          </p>
+          <ul>
+            <li>Review generated results before acting on them.</li>
+            <li>Verify accounting entries and financial calculations.</li>
+            <li>Do not treat AI output as professional legal, tax, or financial advice.</li>
+            <li>Do not assume AI-generated recommendations guarantee business success.</li>
+          </ul>
+          <p>
+            AI features may send the prompt and relevant context you submit
+            to a third-party AI provider to generate a response. The handling
+            of that information is also described in the
+            <a href="index.html">Privacy Policy</a>.
+          </p>
+          <p>
+            The AI models and providers available may change. A model name
+            or feature description does not guarantee that a particular model
+            is active in every version of Xinto.
+          </p>
+        </section>
+
+        <section id="acceptable-use">
+          <h2>6. Acceptable use</h2>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Use Xinto for unlawful, fraudulent, deceptive, or harmful activity.</li>
+            <li>Attempt to access accounts, systems, or data without authorisation.</li>
+            <li>Interfere with the service, bypass security controls, or introduce malware.</li>
+            <li>Upload content that infringes another person's rights or violates law.</li>
+            <li>Misuse another person's personal or confidential information.</li>
+            <li>Scrape, overload, disrupt, or abuse the service or its infrastructure.</li>
+            <li>Reverse engineer the service except where applicable law permits it.</li>
+          </ul>
+        </section>
+
+        <section id="payments">
+          <h2>7. Fees, subscriptions, and third-party services</h2>
+          <p>
+            If paid features or subscriptions are offered, the applicable
+            price, billing period, renewal terms, cancellation process, and
+            refund rules will be presented before purchase or in separate
+            terms. Check the app for the current details before paying.
+          </p>
+          <p>
+            Xinto may depend on third-party services, platforms, or providers.
+            Your use of those services may also be subject to their own terms
+            and privacy policies.
+          </p>
+        </section>
+
+        <section id="availability">
+          <h2>8. Service availability and changes</h2>
+          <p>
+            We aim to make Xinto reliable, but we cannot guarantee uninterrupted
+            or error-free operation. We may maintain, update, restrict, suspend,
+            or discontinue parts of the service for technical, security, legal,
+            or business reasons.
+          </p>
+          <p>
+            Where reasonably practicable and required by law, we will provide
+            notice of material changes.
+          </p>
+        </section>
+
+        <section id="termination">
+          <h2>9. Suspension and termination</h2>
+          <p>
+            You may stop using Xinto at any time. We may suspend or restrict
+            access where reasonably necessary to protect users or the service,
+            address suspected abuse, comply with law, or respond to a material
+            breach of these Terms.
+          </p>
+          <p>
+            To ask about account closure or deletion, email
+            <a href="mailto:xinto6698@gmail.com">xinto6698@gmail.com</a>.
+            Some information may need to be retained where permitted or
+            required by law, as explained in the Privacy Policy.
+          </p>
+        </section>
+
+        <section id="disclaimers">
+          <h2>10. Disclaimers</h2>
+          <p>
+            To the maximum extent permitted by applicable law, Xinto is
+            provided on an “as available” basis. We do not guarantee that the
+            service will meet every business need, that all information will
+            be accurate, or that use of Xinto will produce a particular
+            financial or business outcome.
+          </p>
+          <p>
+            Nothing in these Terms removes a right or protection that cannot
+            legally be excluded.
+          </p>
+        </section>
+
+        <section id="liability">
+          <h2>11. Limitation of liability</h2>
+          <p>
+            To the maximum extent permitted by applicable law, Xinto and its
+            operator will not be liable for indirect, incidental, special, or
+            consequential losses, or for loss of profits, revenue, business
+            opportunities, goodwill, or data arising from use of the service.
+          </p>
+          <p>
+            This section does not exclude or limit liability where such
+            exclusion or limitation is prohibited by law, including mandatory
+            consumer protections that apply to you.
+          </p>
+        </section>
+
+        <section id="law">
+          <h2>12. Applicable law and disputes</h2>
+          <p>
+            Applicable law and dispute-resolution requirements depend on the
+            identity and location of the service operator and the user.
+            Before publication, the operator should obtain legal advice and
+            specify the appropriate governing law and dispute process.
+          </p>
+          <p>
+            Nothing in these Terms removes rights that cannot legally be waived.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h2>13. Changes to these Terms</h2>
+          <p>
+            We may update these Terms as Xinto develops. The date at the top
+            of this page indicates when it was last updated. If a change
+            materially affects users, we will provide notice where required
+            by law. If you do not agree with updated Terms, stop using Xinto.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>14. Contact us</h2>
+          <div class="contact">
+            <p><strong>Questions about these Terms?</strong></p>
+            <p>
+              Email:
+              <a href="mailto:xinto6698@gmail.com">xinto6698@gmail.com</a>
+            </p>
+            <p>
+              Website:
+              <a href="https://bizcentral-7ef79.web.app/" target="_blank"
+                 rel="noopener noreferrer">https://bizcentral-7ef79.web.app/</a>
+            </p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Xinto. All rights reserved.</span>
+      <span>
+        <a href="index.html">Privacy Policy</a> ·
+        <a href="terms.html">Terms of Service</a> ·
+        <a href="mailto:xinto6698@gmail.com">Contact</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
